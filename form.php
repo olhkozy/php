@@ -13,7 +13,7 @@
         $n = $_GET['nazwa'];
         $k = $_GET['kolor'];
         $w = $_GET['lista'];
-        $j = 1;
+        $j = $_GET['jadalny'];
         $q = "INSERT INTO grzyby (nazwa, jadalny, kolor_kapelusza, wystepowanie) 
                 VALUES ('$n', '$j', '$k', '$w')";
     mysqli_query($con, $q);
@@ -26,7 +26,7 @@
     mysqli_close($con);
 ?>
 <br>
-<a href="form1.php"> dodaj kolejnego grzybka! :> </a>
+<a href="form1.php"> dodaj kolejnego grzybka :> </a>
 </div>
 </body>
 </html>

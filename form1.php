@@ -8,19 +8,24 @@
 </head>
 <body>
 <form action="form.php" method="GET">
-<p>podaj nazwe grzybka</p>
+<p>Podaj nazwe grzybka</p>
 <input name="nazwa"><br>
-<p>podaj kolor czapeczki</p>
+<p>Podaj kolor czapeczki</p>
 <input name="kolor"><br>
-<p>gdzie rośnie</p>
+<p>Czy grzyb jest jadalny</p>
+<input name="jadalny" type="radio" value="1">Tak
+<input name="jadalny" type="radio" value="0">Nie<br>
+<p>Gdzie rośnie</p>
 <select name='lista'>
-<option value='lasy iglaste'>lasy iglaste</option>
-<option value='lasy liściaste'>lasy liściaste</option>
-<option value='lasy mieszane'>lasy mieszane</option>
-<option value='łąki'>łąki</option>
+<option value='lasy iglaste'>Lasy iglaste</option>
+<option value='lasy liściaste'>Lasy liściaste</option>
+<option value='lasy mieszane'>Lasy mieszane</option>
+<option value='łąki'>Łąki</option>
 </select>
 <br><br>
 <input type="submit" value="Wyślij formularz">
-<input type="reset" value="Wyczyść dane">
+<input type="reset" value="Wyczyść dane"> <br> 
+<br>
+<a href="form2.php"> wybierz grzybki </a>
 </form>
 </body>

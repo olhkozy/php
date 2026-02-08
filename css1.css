@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: plum;
+    font-size: large;
+}
+
+.left {
+    margin-left: 40rem;
+}
+.right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: flex-end;
+    margin-right: 40rem;
+}

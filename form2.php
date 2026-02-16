@@ -16,7 +16,7 @@
                 <select name='kolor'>
                     <option value="">Wybierz kolor</option>
                     <?php
-                    $con = mysqli_connect("localhost", "root", "", "zdalne");
+                    $con = mysqli_connect("localhost", "root", "", "grzyby");
                     $q1 = "SELECT DISTINCT kolor_kapelusza FROM grzyby";
                     $result = mysqli_query($con, $q1);
                     while ($row = $result->fetch_row()) {
@@ -32,7 +32,7 @@
                 <select name='lista'>
                     <option value="">Wybierz gdzie rośnie</option>
                     <?php
-                    $con = mysqli_connect("localhost", "root", "", "zdalne");
+                    $con = mysqli_connect("localhost", "root", "", "grzyby");
                     $q1 = "SELECT DISTINCT wystepowanie FROM grzyby";
                     $result = mysqli_query($con, $q1);
                     while ($row = $result->fetch_row()) {
@@ -49,7 +49,7 @@
         <div style="float:right;" class="right">
             <?php
             if (!empty($_GET['kolor']) || isset($_GET['jadalny']) || !empty($_GET['lista'])) {
-                $con = mysqli_connect("localhost", "root", "", "zdalne");
+                $con = mysqli_connect("localhost", "root", "", "grzyby");
 
                 $q = "SELECT nazwa FROM grzyby WHERE 1=1";
 

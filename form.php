@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
     <title>wynik</title>
 <div>
     <?php
-    $con = mysqli_connect("localhost", "root","", "zdalne");
+    $con = mysqli_connect("localhost", "root","", "grzyby");
     if (isset($_GET['nazwa']) && isset($_GET['kolor'])) {
         
         $n = $_GET['nazwa'];

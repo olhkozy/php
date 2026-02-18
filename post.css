@@ -1,0 +1,15 @@
+header{
+    height: 150px;
+    border: 5px black;
+    color:azure;
+}
+article{
+    width: 10%;
+}
+main{
+    width: 80%;
+    border: 4px plum dotted;
+}
+footer{
+    border: 4px pink dotted;
+}

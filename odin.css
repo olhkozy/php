@@ -1,0 +1,7 @@
+table, th{
+    border: solid 2px purple;
+    border-radius: 2px;
+}
+p{
+    border: dotted 3px pink;
+}
